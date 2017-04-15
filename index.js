@@ -24,8 +24,8 @@ var tld = result.substring(OFFSET1+OFFSET2, OFFSET1+OFFSET2+OFFSET3);
 
 var path = result.substring(OFFSET1+OFFSET2+OFFSET3);
 
-//var host = subdomain+"."+domain+"."+tld;
-var host = "localhost:2333";
+var host = subdomain+"."+domain+"."+tld;
+//var host = "localhost:2333";
 
 var http = require('http');
 http.createServer(function(req, res) {
