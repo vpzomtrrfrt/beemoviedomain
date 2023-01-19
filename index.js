@@ -41,7 +41,7 @@ http.createServer(function(req, res) {
 		res.end();
 	}
 	else {
-		res.writeHead(301, {"Content-type": "text/plain", "Location": "http://"+host+"/"+path});
+		res.writeHead(301, {"Content-type": "text/plain", "Location": "https://"+host+"/"+path});
 		res.write("Redirecting...");
 		res.end();
 	}
